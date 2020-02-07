@@ -6,6 +6,10 @@
       nav.nav
         g-link.nav__link(to='/') Home
         g-link.nav__link(to='/about/') About
+        g-link.nav__link(to='/services/') Services
+        g-link.nav__link(to='/books/') Books
+        g-link.nav__link(to='/news-events/') News & Events
+        g-link.nav__link(to='/articles/') Articles 
     div.content.mt-0
       slot
 
