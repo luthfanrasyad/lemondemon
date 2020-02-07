@@ -1,16 +1,14 @@
-<template>
-  <div class="layout">
-    <header class="header">
-      <strong>
-        <g-link to="/">{{ $static.metadata.siteName }}</g-link>
-      </strong>
-      <nav class="nav">
-        <g-link class="nav__link" to="/">Home</g-link>
-        <g-link class="nav__link" to="/about/">About</g-link>
-      </nav>
-    </header>
-    <slot/>
-  </div>
+<template lang="pug">
+  v-app.layout
+    header.header
+      strong
+        g-link(to='/') {{ $static.metadata.siteName }}
+      nav.nav
+        g-link.nav__link(to='/') Home
+        g-link.nav__link(to='/about/') About
+    div.content.mt-0
+      slot
+
 </template>
 
 <static-query>
@@ -30,10 +28,7 @@ body {
 }
 
 .layout {
-  max-width: 760px;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .header {
@@ -42,9 +37,15 @@ body {
   align-items: center;
   margin-bottom: 20px;
   height: 80px;
+  border: 1px solid black;
+  padding-left: 20px;
+  padding-right: 20px;
 }
-
 .nav__link {
   margin-left: 20px;
+}
+.content {
+  border: 1px solid black;
+  padding: 20px;
 }
 </style>
