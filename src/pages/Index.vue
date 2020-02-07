@@ -1,22 +1,20 @@
 <template lang="pug">
   layout
     // Learn how to use images here: https://gridsome.org/docs/images
-    g-image(alt='Example image' src='~/favicon.png' width='135')
+    //- g-image(alt='Example image' src='~/favicon.png' width='135')
     h1 Luthfan&apos;s Gridsome
     p
-      | This is a project that will hopefully help me master my craft {{this.title}}
+      | Developing Etnomark's new website!
 </template>
 
 <script>
 export default {
   name: 'LemonDemon',
   data() {
-    return {
-      title: 'Hello, world!'
-    }
+    return {}
   },
   metaInfo: {
-    title: 'Hello, world!'
+    title: 'Home'
   }
 }
 </script>
