@@ -1,14 +1,13 @@
 <template lang="pug">
     div
-        v-app-bar(elevate-on-scroll height="75" v-if="isDesktop").d-flex.flex-column
+        v-app-bar(elevate-on-scroll height="75" v-if="isDesktop" app).d-flex.flex-column
             v-toolbar-title.d-flex.align-items-center
                 g-image(alt='Example image' src='~/logo.png' width='150')
                 //- g-link(to='/') {{ $static.metadata.siteName }}
             v-spacer
             nav.nav
-                g-link.nav__link(v-for="item in items" :to="item.to") {{item.title}}
-
-        v-app-bar(elevate-on-scroll height="75" v-else).d-flex
+                g-link.nav__link(v-for="item in items" :to="item.to").ml-5 {{item.title}}
+        v-app-bar(elevate-on-scroll height="75" v-else app).d-flex
             v-app-bar-nav-icon(@click="drawer = !drawer")
             v-toolbar-title.d-flex.align-items-center.align-self-center
                 g-image(alt='Example image' src='~/logo.png' width='150')
@@ -33,7 +32,7 @@ export default {
             { title: 'Books', icon: 'mdi-help-box', to: '/books' },
             { title: 'News & Events', icon: 'mdi-help-box', to: '/news-events' },
             { title: 'Articles', icon: 'mdi-help-box', to: '/articles' },
-            ],
+        ],
         right: null,
     }
   },
