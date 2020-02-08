@@ -1,10 +1,9 @@
 <template lang="pug">
   layout
-    v-carousel(cycle='' height='400' hide-delimiter-background show-arrows-on-hover)
+    v-carousel(cycle height="auto" hide-delimiter-background show-arrows-on-hover)
       v-carousel-item(v-for="(item,index) in items" :key="index" :src="item.src")
           v-row.fill-height(align='center' justify='center')
-            .display-3.blue(style="border: 1px solid black") {{ item.name }}
-    // Learn how to use images here: https://gridsome.org/docs/images
+            .body-1.blue(style="border: 1px solid black") {{ item.name }}
     //- h1 Luthfan&apos;s Pet Project
     //- p
     //-   | Developing a new website!
@@ -44,6 +43,13 @@ export default {
 <style>
 .home-links a {
   margin-right: 1rem;
+}
+.caro {
+
+}
+.caro-item {
+  width:100%;
+  height:100%;
 }
 </style>
 <!--

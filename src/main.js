@@ -6,12 +6,18 @@ import 'vuetify/dist/vuetify.min.css'
 import DefaultLayout from '~/layouts/Default.vue'
 
 export default function (Vue, { router, head, isClient, appOptions }) {
-  head.link.push({
-    rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/icon?family=Material+Icons'
-  })
+  head.link.push(
+    {
+      rel: 'stylesheet',
+      href: 'https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css'
+    },
+    {
+      rel: 'stylesheet',
+      href: 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900'
+    },
+  )
   
-  const opts = {  } //opts includes, vuetify themes, icons, etc.
+  const opts = {} //opts includes, vuetify themes, icons, etc.
   Vue.use(Vuetify)
   
   appOptions.vuetify = new Vuetify(opts);
