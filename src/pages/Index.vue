@@ -1,13 +1,24 @@
 <template lang="pug">
   layout
-    v-carousel(cycle height="auto" hide-delimiter-background show-arrows-on-hover)
-      v-carousel-item(v-for="(item,index) in items" :key="index" :src="item.src")
-          v-row.fill-height(align='center' justify='center')
-            .body-1.blue(style="border: 1px solid black") {{ item.name }}
+    v-row
+      v-carousel(cycle height="auto" hide-delimiter-background show-arrows-on-hover)
+        v-carousel-item(v-for="(item,index) in items" :key="index" :src="item.src")
+            v-row.fill-height(align='center' justify='center')
+              .body-1.blue(style="border: 1px solid black") {{ item.name }}
+    v-row.my-10.px-10
+      v-divider(darks).gray-light
+    v-row.d-flex.justify-center
+      div.px-10
+        h1
+          i
+            | "Branding is a process, not an event"
+    v-row.my-10.px-10
+      v-divider(darks).gray-light
+    
     v-row.ma-10
       v-col.px-0(v-for="category in categories")
         CategoryCard(:title="category.title" :description="category.description" :img="category.img")
-    v-divider
+
     //- h1 Luthfan&apos;s Pet Project
     //- p
     //-   | Developing a new website!
@@ -25,7 +36,6 @@ export default {
   data() {
     return {
         items: [
-
           {
             name: 'Ethnography',
             src: 'http://etnomark.com/images/slide-pics/resecrh.jpg'

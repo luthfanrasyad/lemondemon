@@ -16,7 +16,7 @@
                     p.body-2 PT ETNOMARK CONSULTING Jalan Maleo XII Blok JC 1 No.28 Bintaro Jaya Sektor 9, Tangerang 15229, Indonesia Phone/Fax : 021 – 7450958email : info@etnomark.com
         v-footer(width="100%").white.px-10
             v-row.d-flex.justify-start.px-5
-                p.body-2.ma-0.text-center © 2016 ETNOMARK - Etnography Marketing Consultant. All Rights Reserved.
+                p.body-2.ma-0.text-center © 2020 ETNOMARK - Etnography Marketing Consultant. All Rights Reserved.
 </template>
 
 <script>
