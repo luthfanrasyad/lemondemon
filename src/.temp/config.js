@@ -1,7 +1,7 @@
 export default {
   "trailingSlash": true,
   "pathPrefix": "",
-  "titleTemplate": "%s | Etnomark - Ethnography Marketing Solutions",
+  "titleTemplate": "%s - Etnomark",
   "siteUrl": "",
   "version": "0.7.12"
 }

@@ -13,7 +13,21 @@ module.exports = {
           pug: { /* Options for `pug-plain-loader` */ },
           pugLoader: { /* Options for `pug-loader` */ }
       }
-    }
+    },
+    // {
+    //   use: '@gridsome/source-wordpress',
+    //   options: {
+    //     baseUrl: 'http://192.168.64.2/wordpress/index.php', // required
+    //     apiBase: 'wp-json',
+    //     typeName: 'WordPress',
+    //     perPage: 100,
+    //     concurrent: 10,
+    //     routes: {
+    //       post: '/:year/:month/:day/:slug',
+    //       post_tag: '/tag/:slug'
+    //     }
+    //   }
+    // }
   ],
   rules: [
     {

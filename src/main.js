@@ -11,7 +11,7 @@ export default function (Vue, { router, head, isClient, appOptions }) {
     href: 'https://fonts.googleapis.com/icon?family=Material+Icons'
   })
   
-  const opts = { } //opts includes, vuetify themes, icons, etc.
+  const opts = {  } //opts includes, vuetify themes, icons, etc.
   Vue.use(Vuetify)
   
   appOptions.vuetify = new Vuetify(opts);
