@@ -3,7 +3,7 @@
     Header
     v-content.content
       slot
-    Footer.pa-10
+    Footer
 
 
 </template>
@@ -50,9 +50,6 @@ body {
   border: 1px solid black;
   padding-left: 20px;
   padding-right: 20px;
-}
-.nav__link {
-  margin-left: 20px;
 }
 .content {
   padding: 20px;
