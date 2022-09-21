@@ -9,7 +9,7 @@
   "dependencies": {
     "@gridsome/source-wordpress": "^0.5.2",
     "gridsome": "^0.7.0",
-    "vuetify": "^2.2.11"
+    "vuetify": "^2.6.10"
   },
   "devDependencies": {
     "deepmerge": "^4.2.2",
